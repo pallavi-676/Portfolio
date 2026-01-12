@@ -1,0 +1,160 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(135deg, #fff0f6, #f8e8ff);
+    color: #333;
+}
+
+
+header {
+    background:  #e1d2eb;
+    backdrop-filter: blur(10px);
+    padding: 25px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #c91870;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+h1:hover {
+    color: #6a1b9a;
+    transform: scale(1.05);
+}
+
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    color: #555;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c91870;
+}
+
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #c91870;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+section {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #6a1b9a;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+}
+
+
+h2:hover {
+    color: #c91870;
+}
+
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #c91870, #f06292);
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+
+p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff0f6;
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+    background: #f8d7ec;
+    transform: translateX(5px);
+}
+
+
+a {
+    color: #6a1b9a;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #c91870;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #e1d2eb;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0 0;
+    font-size: 0.95rem;
+}
